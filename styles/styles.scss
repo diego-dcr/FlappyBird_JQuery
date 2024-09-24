@@ -1,0 +1,62 @@
+$bird-width: 50px;
+$bird-height: 50px;
+$img-url: "../images/fondo.webp";
+
+* {
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin: 0;
+    color: rgb(20, 15, 0);
+}
+
+#start {
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3% auto;
+    height: 80vh;
+    width: 70vw;
+    background-image: url($img-url);
+}
+
+button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(94, 255, 0);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(83, 226, 0);
+}
+
+#bird {
+    width: $bird-width;
+    height: $bird-height;
+    position: relative;
+    left: 50px;
+}
+
+.pipe1 {
+    transform: rotate(180deg);
+}
+
+.pipes {
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
